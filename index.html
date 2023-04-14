@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diamond print</title>
+    
+</head>
+<body>
+    
+
+<div>
+      <h1>Diamond Print Assignment</h1>
+    </div>
+<script>let n = 9;
+  let stars = 1;
+  let spaces = Math.floor(n / 2);
+
+  for (let i = 1; i <= n; i++) {
+    let starStr = "";
+    for (let j = 1; j <= stars; j++) starStr += "*";
+
+    let spaceStr = "";
+    for (let j = 1; j <= spaces; j++) spaceStr += " ";
+
+    console.log(spaceStr + starStr);
+
+    if (i <= n / 2) {
+      stars += 2;
+      spaces -= 1;
+    } else {
+      stars -= 2;
+      spaces += 1;
+    }
+  }
+
+  document.write("<h1>Hello World</h1>");</script>
+   
+    </body>
+</html>
